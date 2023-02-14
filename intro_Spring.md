@@ -70,3 +70,39 @@ This group comprises of JDBC, ORM, OXM, JMS and Transaction modules. These modul
 
 Web
 This group comprises of Web, Web-Servlet, Web-Struts and Web-Portlet. These modules provide support to create web application.
+
+
+What is a Spring configuration file?
+A Spring configuration file is an XML file. This file mainly contains the classes information. It describes how those classes are configured as well as introduced to each other. The XML configuration files, however, are verbose and more clean. If it’s not planned and written correctly, it becomes very difficult to manage in big projects.
+
+
+ What are the different components of a Spring application?
+A Spring application, generally consists of following components:
+
+Interface: It defines the functions.
+Bean class: It contains properties, its setter and getter methods, functions etc.
+Spring Aspect Oriented Programming (AOP): Provides the functionality of cross-cutting concerns.
+Bean Configuration File: Contains the information of classes and how to configure them.
+User program: It uses the function.
+
+How many types of IOC containers are there in spring?
+BeanFactory: BeanFactory is like a factory class that contains a collection of beans. It instantiates the bean whenever asked for by clients.
+ApplicationContext: The ApplicationContext interface is built on top of the BeanFactory interface. It provides some extra functionality on top BeanFactory.
+
+![image](https://user-images.githubusercontent.com/101004260/218683095-c8a12c30-127f-4c42-be2c-f3637947ad81.png)
+
+- What do you understand by @Autowired annotation?
+The @Autowired annotation provides more accurate control over where and how autowiring should be done. This annotation is used to autowire bean on the setter methods, constructor, a property or methods with arbitrary names or multiple arguments. By default, it is a type driven injection.
+
+For Example:
+
+public class Employee
+{
+private String name;
+@Autowired
+public void setName(String name)
+{this.name=name; }
+public string getName()
+{ return name; }
+}
+https://www.edureka.co/blog/interview-questions/spring-interview-questions/ 
